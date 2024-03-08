@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!--Intro text-->
+    <div class="container">
+        <h1>Weather Forecast</h1>
+    </div>
+    <!--weather card-->
+    <div class="card">
+       <!--search box input--> 
+       <div class="search">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><g><path fill="none" d="M0 0h24v24H0z"></path><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15zm-3.847-8.699a2 2 0 1 0 2.646 2.646 4 4 0 1 1-2.646-2.646z"></path></g></svg></button>
+       </div>
+       <!--City weather info-->
+       <div class="weather loading">
+            <h2 class="city">Weather in Chicago</h2>
+            <h3 class="temp">51°C</h3>
+            <!--flex box around the icon description-->
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                <div class="weather-description">Cloudy</div>
+            </div>
+        <!--Weather description-->
+        <div class="weather-humidity">Humidity: 50%</div>
+        <div class="windy">Wind Speed: 5.5km/h</div>
+
+       </div>
+    </div>
+
+    <!--Footer section-->
+        <div class="footer">
+            <p>Now you know what's the weather in your city looks like!<br> Please dress accordingly (*￣∇￣*) </p>
+        </div>
+</body>
+</html>
+
